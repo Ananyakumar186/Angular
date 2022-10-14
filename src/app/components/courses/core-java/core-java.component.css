@@ -1,0 +1,21 @@
+.container{
+    padding-bottom: 2% !important;
+    padding-top: 3% !important;
+}
+
+.card-title{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-style: italic;
+}
+
+.card{
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+}

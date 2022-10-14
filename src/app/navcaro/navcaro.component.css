@@ -1,0 +1,17 @@
+button{
+    border: none;
+    background-color: #ffc107;
+    
+}
+
+nav{
+    height: 15% !important;
+}
+
+.nav-item{
+    padding-top: 2.5% !important;
+}
+
+.searchbar{
+    float: inline-end !important;
+}

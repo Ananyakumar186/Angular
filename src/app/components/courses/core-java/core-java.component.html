@@ -1,0 +1,27 @@
+<h1>CoreJava</h1>
+<div class="container">
+    <div class="card">
+        <table>
+            <tbody>
+                <td>
+                    <youtube-player
+                    [videoId] = id
+                    (ready) = "savePlayer($event)"
+                    [playerVars] = "playerVars"
+                    >
+                    <button type="button" (click) = "playVideo()">
+                    Play Video
+                    </button>
+                    
+                    <button type="button" (click) = "pauseVideo()">Pause Video</button>
+                    </youtube-player>
+                </td>
+                <td>
+                    <h5 class="card-title"> Java Full Course </h5>
+                    <p>This video is based on Core Java Tutorial for Beginners. The Core Java Full Course in 10 Hours video will make sure all the major fundamentals are covered. This Java Programming tutorial is dedicated to helping beginners with a better learning experience. </p>
+                </td>
+            </tbody>
+        </table>
+    </div>
+    </div>
+

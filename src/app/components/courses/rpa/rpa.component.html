@@ -1,0 +1,26 @@
+<h1>RPA</h1>
+<div class="container">
+    <div class="card">
+        <table>
+            <tbody>
+                <td>
+                    <youtube-player
+                    [videoId] = id
+                    (ready) = "savePlayer($event)"
+                    [playerVars] = "playerVars"
+                    >
+                    <button type="button" (click) = "playVideo()">
+                    Play Video
+                    </button>
+                    
+                    <button type="button" (click) = "pauseVideo()">Pause Video</button>
+                    </youtube-player>
+                </td>
+                <td>
+                    <h5 class="card-title">RPA</h5>
+                    <p>This RPA UiPath full course will help you understand what RPA is, and the working of UiPath. UiPath is an advanced RPA tool that enables you to design automation processes visually through diagrams. If you wish to become a UiPath developer, then you're in the right place!</p>
+                </td>
+            </tbody>
+        </table>
+    </div>
+    </div>

@@ -1,0 +1,62 @@
+<ngb-carousel
+        [showNavigationArrows]="true" 
+        [showNavigationIndicators]="true"
+        [interval]=20000
+        [keyboard]="true"
+        [pauseOnHover]="true"
+        [wrap]="true"
+        [activeId]="'sliderThree'">
+
+    <ng-template ngbSlide id="sliderOne">
+        <div class="picsum-img-wrapper">
+            <img src="../../assets/images/1.jpg" alt="Carousel One" width="1500px" height="300px">
+        </div>
+        <div class="carousel-caption">
+            <h3>Welcome to Live Virtual Class</h3>
+            
+        </div>
+    </ng-template>
+    <ng-template ngbSlide id="sliderTwo">
+        <div class="picsum-img-wrapper">
+            <img src="../../assets/images/2.jpg" alt="Carousel Two" width="1500px" height="300px">
+        </div>
+        <div class="carousel-caption">
+            <h3>Welcome to Live Virtual Class</h3>
+        </div>
+    </ng-template>
+    <ng-template ngbSlide id="sliderThree">
+        <div class="picsum-img-wrapper">
+            <img src="../../assets/images/3.jpg" alt="Carousel Three" width="1500px" height="300px">
+        </div>
+        <div class="carousel-caption">
+            <h3>Welcome to Live Virtual Class</h3>
+        </div>
+    </ng-template>
+</ngb-carousel>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <ul class="navbar-nav mr-auto">
+        <!--<li class="nav-item"><button class="nav-link" routerLink="">Home</button></li>-->
+        <li class="nav-item"><button class="nav-link" routerLink="about">About</button></li>
+        <li class="nav-item"><button class="nav-link" routerLink="register">Registration</button></li>
+        <li class="nav-item"><button class="nav-link" routerLink="gallery">Gallery</button></li>
+        <li class="nav-item">
+            <mat-menu #javaM="matMenu">
+              <button class="nav-link" mat-menu-item routerLink="adv-java">ADV. JAVA</button>
+              <button class="nav-link" mat-menu-item routerLink="core-java">CORE JAVA</button>
+            </mat-menu>
+            <mat-menu #appMenu="matMenu" yPosition="above">
+              <button class="nav-link" mat-menu-item routerLink="mean">MEAN STACK</button>
+              <button class="nav-link" mat-menu-item [matMenuTriggerFor]="javaM">JAVA</button>
+              <button class="nav-link" mat-menu-item routerLink="rpa">RPA</button>
+              <button class="nav-link" mat-menu-item routerLink="devops">DEVOPS</button>
+            </mat-menu>
+            <button class="nav-link dropdown-toggle" type="button" [matMenuTriggerFor]="appMenu">All Courses</button>
+          </li>
+          <li class="nav-item"><button class="nav-link" routerLink="tpa">Third Party Access</button></li>
+          <li class="nav-item"><button class="nav-link" routerLink="contact">Contact Us</button></li>
+          
+          
+    </ul>
+</nav>
+

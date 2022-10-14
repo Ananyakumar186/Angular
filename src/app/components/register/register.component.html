@@ -1,0 +1,43 @@
+<div class="container">
+<h1>{{title}}</h1>    
+<form [formGroup]="regform" #form="ngForm" (ngSubmit)="onSubmit(form.value)" novalidate>
+    <div class="card mx-auto">
+        <mat-form-field>
+            <div class="form-group">
+                <input matInput type="text" placeholder="Enter your name"  class="form-control" [(ngModel)]="name" formControlName="name" required>
+            </div>
+            <div> <mat-error *ngIf="regform.controls['name'].invalid && (regform.controls['name'].dirty || regform.controls['name'].touched)" ></mat-error></div>
+            <mat-error *ngIf="regform.controls['name'].errors?.['required']">Name is required</mat-error>
+        </mat-form-field> 
+        <mat-form-field>
+            <div class="form-group">
+                <input matInput type="email" placeholder="Enter your email"  class="form-control" [(ngModel)]="email" formControlName="email" required>
+            </div>
+            <div> <mat-error *ngIf="regform.controls['email'].invalid && (regform.controls['email'].dirty || regform.controls['email'].touched)" ></mat-error></div>
+            <mat-error *ngIf="regform.controls['email'].errors?.['required']">Email is required</mat-error>
+        </mat-form-field> 
+    
+        <mat-form-field>
+            <div class="form-group">
+                <input matInput type="tel" placeholder="Enter your phone no"  class="form-control" [(ngModel)]="phone" formControlName="phone" required>
+            </div>
+            <div> <mat-error *ngIf="regform.controls['phone'].invalid && (regform.controls['phone'].dirty || regform.controls['phone'].touched)" ></mat-error></div>
+            <mat-error *ngIf="regform.controls['phone'].errors?.['required']">Phone no  is required</mat-error>
+        </mat-form-field> 
+
+        <mat-form-field>
+            <div class="form-group">
+                <mat-select [formControl]="cControl" [(ngModel)]="option" placeholder="Course select">
+                    <mat-option *ngFor="let c of courses" [value]="c.value">{{ c.viewValue }}</mat-option>
+                </mat-select>
+            </div>
+            <mat-error *ngIf="cControl.hasError('required')">Please choose a course</mat-error>
+        </mat-form-field>
+        
+        <button [disabled]="regform.pristine || regform.invalid" class="btn btn-success mx-auto">Submit</button>
+    </div>
+</form>
+         
+            
+</div>
+

@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+<div class="lightbox-gallery">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Gallery</h2>
+        </div>
+        <div class="row photos" *ngFor = 'let lst of appList'>
+            <ul>
+              <div><img title="Class with Tapan" style="width: 900px; margin-left: 80px;" [src] = 'lst.url'></div> 
+            </ul>
+           <!-- <img class="img-fluid" src="./assets/images/T.jpg">
+            <img class="img-fluid" src="./assets/images/T1.jpg">-->
+    </div>
+</div>
+

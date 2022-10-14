@@ -1,0 +1,51 @@
+<div class="container">
+<div class="card">
+    <table>
+        <tbody>
+            <td>
+                <youtube-player
+                [videoId] = id
+                (ready) = "savePlayer($event)"
+                [playerVars] = "playerVars"
+                >
+                <button type="button" (click) = "playVideo()">
+                Play Video
+                </button>
+                
+                <button type="button" (click) = "pauseVideo()">Pause Video</button>
+                </youtube-player>
+            </td>
+            <td>
+                <h5 class="card-title"> Devops</h5>
+                <p>This Edureka DevOps Tutorial for Beginners will help you learn DevOps concepts and DevOps tools with examples and demos. You will understand how a DevOps pipeline can be imagined for existing infrastructure. Furthermore, it will cover different DevOps tools & phases.</p>
+            </td>
+        </tbody>
+    </table>
+</div>
+</div>
+<div class="container">
+<div class="card">
+    <table>
+        <tbody>
+            <td>
+                <youtube-player
+                [videoId] = id1
+                (ready) = "savePlayer($event)"
+                [playerVars] = "playerVars"
+                >
+                <button type="button" (click) = "playVideo()">
+                Play Video
+                </button>
+                
+                <button type="button" (click) = "pauseVideo()">Pause Video</button>
+                </youtube-player>
+            </td>
+            <td>
+                <h5 class="card-title"> AWS Devops</h5>
+                <p>In this AWS DevOps training video, you will learn everything about AWS and DevOps from basic to advance level. This video on AWS DevOps Tutorial For Beginners includes an introduction to DevOps, AWS, why DevOps with AWS, AWS codepipeline, hands-on project, and interview preparation. This is a must-watch session for everyone who wishes to learn AWS DevOps and make a career in the cloud domain.
+                    </p>
+            </td>
+        </tbody>
+    </table>
+</div>
+</div>

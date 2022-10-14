@@ -1,0 +1,18 @@
+p , h5{
+    text-align: center;    
+}
+a{
+    margin-left:50px;
+}
+
+.card{
+    box-shadow: 3px;
+    
+}
+
+#maincard{
+    box-shadow: 5px;
+    width: 1100px;
+    padding-inline-start: 30px;
+    
+}
